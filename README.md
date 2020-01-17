@@ -1,3 +1,1 @@
-$ScriptFromGitHub = Invoke-WebRequest https://raw.githubusercontent.com/ViktorNossredna/install/master/dummy.ps1
-Invoke-Expression $($ScriptFromGitHub.Content)
-2
+Invoke-Expression ($(Invoke-WebRequest https://raw.githubusercontent.com/ViktorNossredna/install/master/install.ps1).Content)
