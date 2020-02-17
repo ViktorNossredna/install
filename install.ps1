@@ -15,7 +15,22 @@ Write-Output .
 Write-Output "Chocolatey installed"
 Write-Output .
 
-choco install autoruns
-Write-Output "autoruns installed"
+Write-Output "Start installing stuff.."
+choco install git
+choco install vscode
+choco install vscode-python
+choco install p4merge
+choco install 7zip
+choco install everything
+choco install agentransack
+choco install spotify
+choco install miniconda3
+choco install cuda
+choco install obs-studio
+choco install wireshark
+choco install winscp
+choco install postman
+choco install vlc
+Write-Output "Done installing stuff!"
 
 pause
