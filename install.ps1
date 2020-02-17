@@ -19,6 +19,7 @@ Write-Output "Start installing stuff.."
 choco install git
 choco install vscode
 choco install vscode-python
+choco install vscode-gitlens
 choco install p4merge
 choco install 7zip
 choco install everything
@@ -31,6 +32,7 @@ choco install wireshark
 choco install winscp
 choco install postman
 choco install vlc
+choco install googlechrome
 Write-Output "Done installing stuff!"
 
 pause
