@@ -35,4 +35,12 @@ choco install vlc
 choco install googlechrome
 Write-Output "Done installing stuff!"
 
+Write-Output "Configure aliases.sh.."
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ViktorNossredna/install/master/aliases.sh" -OutFile "C:\Program Files\Git\etc\profile.d\aliases.sh"
+Write-Output "Configuring aliases.sh done!"
+
+Write-Output "Configure .gitconfig.."
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ViktorNossredna/install/master/mytemplate.gitconfig" -OutFile "C:\Users\guttm\.gitconfig"
+Write-Output "Configuring .gitconfig done!"
+
 pause
