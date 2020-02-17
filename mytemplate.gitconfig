@@ -1,0 +1,41 @@
+[core]
+    autocrlf = false
+[push]
+    default = simple
+[remote "origin"]
+                             prune = true
+[sendpack]
+                             sideband = false
+[user]
+    name = Viktor Andersson
+    email = viktor.nossredna@gmail.com
+[credential]
+    helper = wincred
+[merge]
+                             tool = p4merge
+[mergetool]
+                             keepBackup = false
+
+[alias]
+                             cl = !sh -c 'git reset --hard && git clean -fxd'
+                             co = checkout
+                             st = status
+                             br = branch
+                             mt = mergetool
+                             dt = difftool
+                             lo = log --oneline --graph
+                             pr = pull --rebase
+
+[color "branch"]
+                             current = cyan reverse
+                             remote = yellow
+[color "status"]
+                             added = green
+                             changed = yellow
+                             untracked = red bold
+[color "diff"]
+                             old = red bold
+[fetch]
+    prune = true
+[http]
+    sslVerify = false
