@@ -42,7 +42,7 @@ Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ViktorNossredna/instal
 Write-Output "Configuring aliases.sh done!"
 
 Write-Output "Configure .gitconfig.."
-Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ViktorNossredna/install/master/mytemplate.gitconfig" -OutFile "C:\Users\guttm\.gitconfig"
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/ViktorNossredna/install/master/mytemplate.gitconfig" -OutFile "$env:USERPROFILE\.gitconfig"
 Write-Output "Configuring .gitconfig done!"
 
 pause
