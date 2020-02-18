@@ -20,6 +20,8 @@ choco install git
 choco install vscode
 choco install vscode-python
 choco install vscode-gitlens
+choco install vscode-todo-tree
+# vscode-jumpy // this package does not exist, install manually
 choco install p4merge
 choco install 7zip
 choco install everything
