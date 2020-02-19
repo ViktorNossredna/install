@@ -35,6 +35,7 @@ choco install winscp
 choco install postman
 choco install vlc
 choco install googlechrome
+choco install slack
 Write-Output "Done installing stuff!"
 
 Write-Output "Configure aliases.sh.."
